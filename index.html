@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Daniel Valladolid</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand">Daniel Valladolid</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">Sobre mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Redes</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="https://github.com/Desppo" target="_blank">GitHub</a></li>
+                            <li><a class="dropdown-item" href="https://linkedin.com/in/daniel-valladolid-moreno" target="_blank">LinkedIn</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="principal" class="container-fluid bg-dark text-white text-center py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <h1 class="display-4">Hola, soy Daniel</h1>
+                    <p class="lead">Estudiante de Ingeniería Informática apasionado por el desarrollo web y la IA.</p>
+                    <a href="#projects" class="btn btn-primary btn-lg">Ver proyectos</a>
+                    <a href="#contact" class="btn btn-secondary btn-lg ms-2">Contactar</a>
+                    <a href="CV_Daniel_Valladolid.pdf" download="CV_Daniel_Valladolid.pdf" class="btn btn-secondary btn-lg ms-2">Curriculum</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="container my-5">
+        <div class="row">
+            <div class="col-md-5 text-center mb-4">
+                <img src="img/danielvalladolid.jpg" class="img-fluid rounded" alt="Foto Daniel Valladolid">
+            </div>
+
+            <div class="col-md-7">
+                <h2>Sobre mí</h2>
+                <p>Soy estudiante de 4º curso del Grado en Ingeniería Informática en la Universidad Pablo de Olavide. Me caracteriza una gran curiosidad por entender cómo funcionan las cosas en su núcleo y una fuerte persistencia para resolver problemas complejos.</p>
+
+                <div class="accordion mb-4">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">Metodología de trabajo</button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionAbout">
+                            <div class="accordion-body">He desarrollado aplicaciones completas, desde la arquitectura de APIs y bases de datos hasta la integración de modelos de IA locales. Busco aportar valor mediante un código limpio y eficiente.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="mt-4 mb-3">Habilidades Principales</h4>
+
+                <div class="mb-2">
+                    <span>Python / Django</span>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                    </div>
+                </div>
+                <div class="mb-2">
+                    <span>Java</span>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+                    </div>
+                </div>
+                <div class="mb-2">
+                    <span>C / C++</span>
+                    <div class="progress">
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Proyectos Destacados</h2>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="img/nutrigreen.png" class="card-img-top" alt="Proyecto NutriGreen">
+                        <div class="card-body">
+                            <h5 class="card-title">NutriGreen</h5>
+                            <p class="card-text">App web que genera dietas personalizadas generadas por IA según el tipo de alimentación seleccionada y el aporte calórico.</p>
+                            <p>
+                                <span class="badge bg-secondary">Node.js</span>
+                                <span class="badge bg-secondary">Llama 3.3</span>
+                            </p>
+                            <a href="https://github.com/Desppo/NutriGreen" target="_blank" class="btn btn-primary">Ver código</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="img/asteroyer.png" class="card-img-top" alt="Proyecto Asteroyer">
+                        <div class="card-body">
+                            <h5 class="card-title">Asteroyer</h5>
+                            <p class="card-text">Simulador 3D de impactos de asteroides basado en la API NeoWS (NASA). El backend procesa los datos para su visualización.</p>
+                            <p>
+                                <span class="badge bg-secondary">Django</span>
+                                <span class="badge bg-secondary">Three.js</span>
+                            </p>
+                            <a href="https://github.com/Desppo/AsteroyerApp.git" target="_blank" class="btn btn-primary">Ver repositorio</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="img/series-temporales.png" class="card-img-top" alt="Proyecto Series Temporales">
+                        <div class="card-body">
+                            <h5 class="card-title">Predictores Paralelos</h5>
+                            <p class="card-text">Implementación de un algoritmo KNN para evaluación de escalabilidad y rendimiento con técnicas de High Performance Computing.</p>
+                            <p>
+                                <span class="badge bg-secondary">C / OpenMP</span>
+                                <span class="badge bg-secondary">MPI</span>
+                            </p>
+                            <button class="btn btn-outline-secondary" disabled>Proyecto Académico</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container my-5">
+        <div class="row">
+            <div class="col-12 text-center mb-4">
+                <h2>Contacto</h2>
+                <p class="lead">Si tienes alguna oportunidad laboral o duda, estaré encantado de escucharte.</p>
+            </div>
+
+            <div class="col-md-5 mb-4">
+                <ul class="list-group">
+                    <li class="list-group-item bg-light fw-bold">Mis datos de contacto</li>
+                    <li class="list-group-item"><strong>Email:</strong> daniel.valladolid.ing@outlook.com</li>
+                    <li class="list-group-item"><strong>Teléfono:</strong> +34 657 10 55 60</li>
+                    <li class="list-group-item"><strong>Ubicación:</strong> Sevilla, España</li>
+                    <li class="list-group-item"><strong>Idiomas:</strong> Español (Nativo), Inglés (B2)</li>
+                </ul>
+            </div>
+
+            <div class="col-md-7">
+                <div class="alert alert-info" role="alert">
+                    Respondo a los correos en un plazo máximo de 24 horas laborables.
+                </div>
+
+                <form action="https://formsubmit.co/daniel.valladolid.ing@outlook.com" method="POST">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Nombre</label>
+                            <input type="text" name="nombre" class="form-control" placeholder="Nombre" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" name="email" class="form-control" placeholder="email@email.com" required>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Mensaje</label>
+                        <textarea name="mensaje" class="form-control" rows="4" placeholder="Escribe un mensaje..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="container-fluid bg-dark text-white text-center p-4">
+        <div class="container">
+            <p class="mb-0">© 2026 Daniel Valladolid Moreno - Portfolio</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
