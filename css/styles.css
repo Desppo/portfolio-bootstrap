@@ -1,0 +1,57 @@
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 60px; 
+}
+
+.navbar {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#principal {
+    background: linear-gradient(135deg, #212529 0%, #111417 100%) !important;
+    border-bottom: 4px solid #0d6efd;
+}
+
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px); 
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15); 
+}
+
+.card-img-top {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    object-fit: cover; 
+    height: 220px; 
+}
+
+#about img {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    border: 3px solid #f8f9fa;
+    transition: transform 0.3s ease;
+}
+
+#about img:hover {
+    transform: scale(1.02);
+}
+
+.progress {
+    height: 1.2rem;
+    border-radius: 20px;
+    background-color: #e9ecef;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.progress-bar {
+    border-radius: 20px;
+    font-weight: 500;
+}
